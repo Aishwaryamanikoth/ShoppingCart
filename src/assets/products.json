@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Backpack",
+    "category": "Bag",
+    "color": "Black",
+    "price": 29.99
+  },
+  {
+    "id": 2,
+    "name": "Tote Bag",
+    "category": "Bag",
+    "color": "Blue",
+    "price": 24.99
+  },
+  {
+    "id": 3,
+    "name": "Umbrella",
+    "category": "Accessories",
+    "color": "Red",
+    "price": 12.49
+  },
+  {
+    "id": 4,
+    "name": " Bottle",
+    "category": "Accessories",
+    "color": "Green",
+    "price": 9.99
+  },
+  {
+    "id": 5,
+    "name": "Laptop Backpack",
+    "category": "Bag",
+    "color": "Gray",
+    "price": 39.99
+  },
+  {
+    "id": 6,
+    "name": "Lunch Box",
+    "category": "Accessories",
+    "color": "Brown",
+    "price": 34.99
+  },
+  {
+    "id": 7,
+    "name": "Notebook",
+    "category": "Stationery",
+    "color": "White",
+    "price": 7.99
+  },
+  {
+    "id": 8,
+    "name": "Backpack Cover",
+    "category": "Accessories",
+    "color": "Yellow",
+    "price": 14.99
+  },
+  {
+    "id": 9,
+    "name": "Travel Umbrella",
+    "category": "Accessories",
+    "color": "Blue",
+    "price": 16.99
+  },
+  {
+    "id": 10,
+    "name": "Shoes",
+    "category": "Accessories",
+    "color": "Purple",
+    "price": 11.99
+  }
+]

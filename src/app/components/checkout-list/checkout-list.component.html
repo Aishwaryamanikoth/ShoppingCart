@@ -1,0 +1,26 @@
+<div *ngIf="selectedItemsWithCount.length > 0">
+  <h2>Selected Items:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of selectedItemsWithCount">
+        <td>{{ item.name }}</td>
+        <td>{{ item.count }}</td>
+        <td>{{ item.price * item.count }}</td>
+
+      </tr>
+    </tbody>
+  </table>
+  <p>Total Price : {{ totalSum }}</p>
+  <button (click)="goBack()">Go Back</button>
+</div>
+<div *ngIf="selectedItemsWithCount.length === 0">
+  <button (click)="goBack()">Go Back</button>
+  <p>No items selected.</p>
+</div>
