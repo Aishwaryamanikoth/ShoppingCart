@@ -1,5 +1,6 @@
 <!-- item-list.component.html -->
 <div class="container">
+  <h1>SHOPPING CART</h1>
   <div class="filter">
     <input type="text" placeholder="Search by name" [(ngModel)]="nameFilter">
     <input type="text" placeholder="Search by color" [(ngModel)]="colorFilter">
@@ -7,7 +8,7 @@
     <button (click)="applyFilters()">Search</button>
   </div>
 
-  <button (click)="goToCheckout()">Cart ({{ selectedItems.length }})</button>
+  <button (click)="goToCheckout()">CART ITEMS ({{ selectedItems.length }})</button>
 
   <table>
     <thead>
@@ -24,6 +25,9 @@
         <td>{{ product.color }}</td>
         <td>{{ product.price }}</td>
         <td><button (click)="addToCart(product)">Add to Cart</button></td>
+        <td>
+          <button (click)="removeFromCart(product)">Remove</button>
+        </td>
       </tr>
     </tbody>
   </table>

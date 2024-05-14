@@ -41,6 +41,14 @@ export class ItemListComponent implements OnInit {
     this.selectedItems.push(product);
   }
 
+  removeFromCart(product: any): void {
+    
+    const index = this.selectedItems.indexOf(product);
+    if (index !== -1) {
+      this.selectedItems.splice(index, 1); // Remove the product from the selectedItems array
+    }
+  }
+
   goToCheckout(): void {
     console.log(this.selectedItems);
     this.router.navigate(['/checkout'], { state: { selectedItems: this.selectedItems } });
