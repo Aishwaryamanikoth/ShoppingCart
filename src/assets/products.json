@@ -68,5 +68,75 @@
     "category": "Accessories",
     "color": "Purple",
     "price": 11.99
+  },
+  {
+    "id": 11,
+    "name": "Duffel Bag",
+    "category": "Bag",
+    "color": "Black",
+    "price": 49.99
+  },
+  {
+    "id": 12,
+    "name": "Messenger Bag",
+    "category": "Bag",
+    "color": "Brown",
+    "price": 36.99
+  },
+  {
+    "id": 13,
+    "name": "Wallet",
+    "category": "Accessories",
+    "color": "Black",
+    "price": 19.99
+  },
+  {
+    "id": 14,
+    "name": "Sunglasses",
+    "category": "Accessories",
+    "color": "Blue",
+    "price": 29.99
+  },
+  {
+    "id": 15,
+    "name": "Scarf",
+    "category": "Accessories",
+    "color": "Red",
+    "price": 14.99
+  },
+  {
+    "id": 16,
+    "name": "Watch",
+    "category": "Accessories",
+    "color": "Silver",
+    "price": 99.99
+  },
+  {
+    "id": 17,
+    "name": "Backpack Organizer",
+    "category": "Accessories",
+    "color": "Gray",
+    "price": 9.99
+  },
+  {
+    "id": 18,
+    "name": "Gloves",
+    "category": "Accessories",
+    "color": "Black",
+    "price": 12.99
+  },
+  {
+    "id": 19,
+    "name": "Hat",
+    "category": "Accessories",
+    "color": "Blue",
+    "price": 17.99
+  },
+  {
+    "id": 20,
+    "name": "Necklace",
+    "category": "Accessories",
+    "color": "Gold",
+    "price": 39.99
   }
 ]

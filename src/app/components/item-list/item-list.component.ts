@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { ProductService } from '../../product.service';
 
 @Component({
-  selector: 'app-item-list',
+  // selector: 'app-item-list',
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.css']
 })
@@ -42,7 +42,7 @@ export class ItemListComponent implements OnInit {
     this.selectedItems.push(product);
   }
 
- 
+
 
   goToCheckout(): void {
     console.log(this.selectedItems);
