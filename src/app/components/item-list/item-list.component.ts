@@ -13,8 +13,7 @@ export class ItemListComponent implements OnInit {
   selectedItems: any[] = [];
   nameFilter: string = '';
   colorFilter: string = '';
-  priceFilter: number = 0;
-  valueFilter: number = 0;
+  priceFilter: string = '';
 
   constructor(private productService: ProductService, private router: Router) { }
 
