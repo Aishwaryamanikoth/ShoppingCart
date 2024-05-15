@@ -1,6 +1,12 @@
+
+<div class="header">
+  <h1>SHOPPING CART</h1>
+</div>
 <!-- item-list.component.html -->
 <div class="container">
-  <h1>SHOPPING CART</h1>
+
+
+
   <div class="filter">
     <input type="text" placeholder="Search by name" [(ngModel)]="nameFilter">
     <input type="text" placeholder="Search by color" [(ngModel)]="colorFilter">
@@ -8,25 +14,17 @@
     <button (click)="applyFilters()">Search</button>
   </div>
 
-  <button (click)="goToCheckout()">CART ITEMS ({{ selectedItems.length }})</button>
+  <button (click)="goToCheckout()" class="cart">CART ITEMS ({{ selectedItems.length }})</button>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Color</th>
-        <th>Price</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let product of filteredProducts">
-        <td>{{ product.name }}</td>
-        <td>{{ product.color }}</td>
-        <td>{{ product.price }}</td>
-        <td><button (click)="addToCart(product)">Add to Cart</button></td>
-        
-      </tr>
-    </tbody>
-  </table>
+  <ul class="product-list">
+    <li *ngFor="let product of filteredProducts" class="product-card">
+      <div class="product-info">
+        <h2>{{ product.name }}</h2>
+        <p>Color: {{ product.color }}</p>
+        <p>Price: {{ product.price }}</p>
+        <button (click)="addToCart(product)">Add to Cart</button>
+      </div>
+      <img src="{{ product.img }}" alt="{{ product.name }}">
+    </li>
+  </ul>
 </div>
