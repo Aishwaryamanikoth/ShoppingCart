@@ -43,6 +43,8 @@ export class CheckoutListComponent implements OnInit {
     this.selectedItemsWithCount = Array.from(map.values());
   }
 
+ 
+
   goBack(): void {
     this.location.back();
   }

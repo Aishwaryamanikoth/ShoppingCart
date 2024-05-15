@@ -14,6 +14,7 @@ export class ItemListComponent implements OnInit {
   nameFilter: string = '';
   colorFilter: string = '';
   priceFilter: number = 0;
+  valueFilter: number = 0;
 
   constructor(private productService: ProductService, private router: Router) { }
 
@@ -33,7 +34,7 @@ export class ItemListComponent implements OnInit {
       const nameMatch = product.name.toLowerCase().includes(this.nameFilter.toLowerCase());
       const colorMatch = product.color.toLowerCase().includes(this.colorFilter.toLowerCase());
       const priceMatch = this.priceFilter ? product.price <= this.priceFilter : true;
-      return nameMatch && colorMatch && priceMatch;
+      return nameMatch && colorMatch && priceMatch ;
     });
   }
 
@@ -41,13 +42,7 @@ export class ItemListComponent implements OnInit {
     this.selectedItems.push(product);
   }
 
-  removeFromCart(product: any): void {
-    
-    const index = this.selectedItems.indexOf(product);
-    if (index !== -1) {
-      this.selectedItems.splice(index, 1); // Remove the product from the selectedItems array
-    }
-  }
+ 
 
   goToCheckout(): void {
     console.log(this.selectedItems);
