@@ -27,8 +27,10 @@ export class CheckoutListComponent implements OnInit {
   }
 
   calculateTotalSum(): void {
-    this.totalSum = this.selectedItems.reduce((total, item) => total + item.price, 0);
+    const total = this.selectedItems.reduce((total, item) => total + item.price, 0);
+    this.totalSum = parseFloat(total.toFixed(3));
   }
+
 
   aggregateItemsWithCount(): void {
     const map = new Map();
@@ -43,7 +45,11 @@ export class CheckoutListComponent implements OnInit {
     this.selectedItemsWithCount = Array.from(map.values());
   }
 
- 
+  removeItem(index: number): void {
+    this.selectedItems.splice(index, 1);
+    this.calculateTotalSum();
+    this.aggregateItemsWithCount();
+  }
 
   goBack(): void {
     this.location.back();
